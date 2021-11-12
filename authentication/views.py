@@ -21,7 +21,7 @@ def authlogin(request):
     return render(request,'authentication/login.html')
 def authlogout(request):
     logout(request)
-    messages.success(request, 'Logout successfully')
+    messages.success(request, 'User Logout successfully')
     return redirect('login')
 
 def authregistration(request):
